@@ -104,52 +104,7 @@ function startup_reloaded_products_caps() {
 
 register_activation_hook( __FILE__, 'startup_reloaded_products_caps' );
 
-// Product types taxonomy
-function startup_reloaded_product_types() {
-	$labels = array(
-		'name'                       => _x( 'Product Types', 'Taxonomy General Name', 'startup-reloaded-products' ),
-		'singular_name'              => _x( 'Product Type', 'Taxonomy Singular Name', 'startup-reloaded-products' ),
-		'menu_name'                  => __( 'Product Types', 'startup-reloaded-products' ),
-		'all_items'                  => __( 'All Items', 'startup-reloaded-products' ),
-		'parent_item'                => __( 'Parent Item', 'startup-reloaded-products' ),
-		'parent_item_colon'          => __( 'Parent Item:', 'startup-reloaded-products' ),
-		'new_item_name'              => __( 'New Item Name', 'startup-reloaded-products' ),
-		'add_new_item'               => __( 'Add New Item', 'startup-reloaded-products' ),
-		'edit_item'                  => __( 'Edit Item', 'startup-reloaded-products' ),
-		'update_item'                => __( 'Update Item', 'startup-reloaded-products' ),
-		'view_item'                  => __( 'View Item', 'startup-reloaded-products' ),
-		'separate_items_with_commas' => __( 'Separate items with commas', 'startup-reloaded-products' ),
-		'add_or_remove_items'        => __( 'Add or remove items', 'startup-reloaded-products' ),
-		'choose_from_most_used'      => __( 'Choose from the most used', 'startup-reloaded-products' ),
-		'popular_items'              => __( 'Popular Items', 'startup-reloaded-products' ),
-		'search_items'               => __( 'Search Items', 'startup-reloaded-products' ),
-		'not_found'                  => __( 'Not Found', 'startup-reloaded-products' )
-	);
-	$args = array(
-		'labels'                     => $labels,
-		'hierarchical'               => false,
-		'public'                     => true,
-		'show_ui'                    => true,
-		'show_admin_column'          => true,
-		'show_in_nav_menus'          => true,
-		'show_tagcloud'              => false
-	);
-	register_taxonomy( 'product-type', array( 'products' ), $args );
-
-}
-
-add_action( 'init', 'startup_reloaded_product_types', 0 );
-
-// Retirer la boite de la taxonomie sur le coté
-function startup_reloaded_product_types_metabox_remove() {
-	remove_meta_box( 'tagsdiv-product-type', 'products', 'side' );
-    // tagsdiv-product_types pour les taxonomies type tags
-    // custom_taxonomy_slugdiv pour les taxonomies type categories
-}
-
-add_action( 'admin_menu' , 'startup_reloaded_product_types_metabox_remove' );
-
-// Product categories taxonomy
+// Products taxonomy
 function startup_reloaded_product_categories() {
 	$labels = array(
 		'name'                       => _x( 'Product Categories', 'Taxonomy General Name', 'startup-reloaded-products' ),
@@ -232,15 +187,6 @@ function startup_reloaded_products_meta() {
 		'desc'       => __( 'i.e. "New business building in Montreal"', 'startup-reloaded-products' ),
 		'id'         => $prefix . 'short',
 		'type'       => 'text'
-	) );
-    
-    $cmb_box->add_field( array(
-		'name'     => __( 'Type', 'startup-reloaded-products' ),
-		'desc'     => __( 'Select the type(s) of the product', 'startup-reloaded-products' ),
-		'id'       => $prefix . 'type',
-		'type'     => 'taxonomy_multicheck',
-		'taxonomy' => 'product-type', // Taxonomy Slug
-		'inline'  => true // Toggles display to inline
 	) );
     
     $cmb_box->add_field( array(
