@@ -170,17 +170,6 @@ function startup_reloaded_products_meta() {
             'url' => false,
         ),
 	) );
-    
-    $cmb_box->add_field( array(
-		'name' => __( 'Thumbnail', 'startup-reloaded-products' ),
-		'desc' => __( 'The product picture on your website listings, if different from Main picture.', 'startup-reloaded-products' ),
-		'id'   => $prefix . 'thumbnail',
-		'type' => 'file',
-        // Optionally hide the text input for the url:
-        'options' => array(
-            'url' => false,
-        ),
-	) );
 
 	$cmb_box->add_field( array(
 		'name'       => __( 'Short description', 'startup-reloaded-products' ),
