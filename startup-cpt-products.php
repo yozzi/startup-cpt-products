@@ -218,7 +218,19 @@ function startup_reloaded_products_meta() {
 		'name' => __( 'Description', 'startup-reloaded-products' ),
 		'desc' => __( 'Full, main description', 'startup-reloaded-products' ),
 		'id'   => $prefix . 'description',
-		'type' => 'textarea'
+		'type' => 'wysiwyg',
+        'options' => array(
+            'wpautop' => true, // use wpautop?
+            'media_buttons' => false, // show insert/upload button(s)
+            'textarea_rows' => get_option('default_post_edit_rows', 5), // rows="..."
+            'tabindex' => '',
+            'editor_css' => '', // intended for extra styles for both visual and HTML editors buttons, needs to include the `<style>` tags, can use "scoped".
+            'editor_class' => '', // add extra class(es) to the editor textarea
+            'teeny' => false, // output the minimal editor config used in Press This
+            'dfw' => false, // replace the default fullscreen with DFW (needs specific css)
+            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
+            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
+    ),
 	) );
 
 	$cmb_box->add_field( array(
