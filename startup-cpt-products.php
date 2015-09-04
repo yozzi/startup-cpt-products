@@ -3,7 +3,7 @@
 Plugin Name: StartUp Products
 Description: Le plugin pour activer le Custom Post Products
 Author: Yann Caplain
-Version: 0.1.0
+Version: 1.0.0
 Text Domain: startup-reloaded-products
 */
 
