@@ -68,7 +68,7 @@ function startup_reloaded_products() {
 		'show_ui'             => true,
 		'show_in_menu'        => true,
 		'menu_position'       => 5,
-		'menu_icon'           => 'dashicons-cart',
+		'menu_icon'           => 'dashicons-products',
 		'show_in_admin_bar'   => false,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,

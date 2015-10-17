@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: StartUp Products\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Wed Sep 02 2015 20:28:26 GMT-0400 (EDT)\n"
-"PO-Revision-Date: Wed Sep 02 2015 20:29:34 GMT-0400 (EDT)\n"
+"PO-Revision-Date: Wed Sep 02 2015 20:35:21 GMT-0400 (EDT)\n"
 "Last-Translator: yann <yozz.online@gmail.com>\n"
 "Language-Team: \n"
 "Language: French (France)\n"
@@ -216,19 +216,19 @@ msgstr "Bientôt épuisé"
 
 #: /startup-cpt-products.php:264
 msgid "Sold out"
-msgstr ""
+msgstr "Épuisé"
 
 #: /startup-cpt-products.php:265
 msgid "Back order"
-msgstr ""
+msgstr "Sur commande"
 
 #: /startup-cpt-products.php:266
 msgid "Sale closed"
-msgstr ""
+msgstr "Vente terminée"
 
 #: /startup-cpt-products.php:267
 msgid "Unavailable"
-msgstr ""
+msgstr "Indisponible"
 
 #: /startup-cpt-products.php:272
 msgid "Description"
