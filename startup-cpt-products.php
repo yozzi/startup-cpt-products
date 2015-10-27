@@ -260,7 +260,7 @@ function startup_reloaded_products_meta() {
 	) );
 }
 
-add_action( 'cmb2_init', 'startup_reloaded_products_meta' );
+add_action( 'cmb2_admin_init', 'startup_reloaded_products_meta' );
 
 // Shortcode
 add_shortcode( 'products', function( $atts, $content= null ){
