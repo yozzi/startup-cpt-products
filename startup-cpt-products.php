@@ -84,7 +84,7 @@ function startup_reloaded_products() {
 
 add_action( 'init', 'startup_reloaded_products', 0 );
 
-//Flusher les permalink à l'activation du plgin pour qu'ils fonctionnent sans mise à jour manuelle
+//Flusher les permalink à l'activation du plugin pour qu'ils fonctionnent sans mise à jour manuelle
 function startup_reloaded_products_rewrite_flush() {
     startup_reloaded_products();
     flush_rewrite_rules();
@@ -261,4 +261,11 @@ function startup_reloaded_products_meta() {
 }
 
 add_action( 'cmb2_init', 'startup_reloaded_products_meta' );
+
+// Shortcode
+add_shortcode( 'products', function( $atts, $content= null ){
+    ob_start();
+    require get_template_directory() . '/inc/shortcodes/products.php';
+    return ob_get_clean();
+});
 ?>
