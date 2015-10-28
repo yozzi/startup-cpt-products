@@ -1,13 +1,16 @@
+# Loco Gettext template
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: StartUp Products\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Sep 02 2015 20:28:26 GMT-0400 (EDT)\n"
-"PO-Revision-Date: Wed Oct 28 2015 15:53:57 GMT-0400 (Est (heure d’été))\n"
-"Last-Translator: yann <ycaplain@croisieresaml.com>\n"
+"POT-Creation-Date: Wed Oct 28 2015 15:45:04 GMT-0400 (Est (heure d’été))\n"
+"POT-Revision-Date: Wed Oct 28 2015 15:45:15 GMT-0400 (Est (heure d’été))\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: French (France)\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,235 +22,238 @@ msgstr ""
 "_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
 "esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
-"X-Loco-Target-Locale: fr_FR\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: startup-cpt-products.php:44
+#. Name of the plugin
+msgid "StartUp Products"
+msgstr ""
+
+#. Description of the plugin
+msgid "Le plugin pour activer le Custom Post Products"
+msgstr ""
+
+#. Author of the plugin
+msgid "Yann Caplain"
+msgstr ""
+
+#: /startup-cpt-products.php:44
 msgctxt "Post Type General Name"
 msgid "Products"
 msgstr ""
 
-#: startup-cpt-products.php:45
+#: /startup-cpt-products.php:45
 msgctxt "Post Type Singular Name"
 msgid "Product"
 msgstr ""
 
-#: startup-cpt-products.php:46 /startup-cpt-products.php:47
+#: /startup-cpt-products.php:46 /startup-cpt-products.php:47
 msgid "Products"
 msgstr ""
 
-#: startup-cpt-products.php:48 /startup-cpt-products.php:115
+#: /startup-cpt-products.php:48 /startup-cpt-products.php:123
 msgid "Parent Item:"
 msgstr ""
 
-#: startup-cpt-products.php:49 /startup-cpt-products.php:113
+#: /startup-cpt-products.php:49 /startup-cpt-products.php:121
 msgid "All Items"
 msgstr ""
 
-#: startup-cpt-products.php:50 /startup-cpt-products.php:117
+#: /startup-cpt-products.php:50 /startup-cpt-products.php:125
 msgid "Add New Item"
 msgstr ""
 
-#: startup-cpt-products.php:51
+#: /startup-cpt-products.php:51
 msgid "Add New"
 msgstr ""
 
-#: startup-cpt-products.php:52
+#: /startup-cpt-products.php:52
 msgid "New Item"
 msgstr ""
 
-#: startup-cpt-products.php:53 /startup-cpt-products.php:118
+#: /startup-cpt-products.php:53 /startup-cpt-products.php:126
 msgid "Edit Item"
 msgstr ""
 
-#: startup-cpt-products.php:54 /startup-cpt-products.php:119
+#: /startup-cpt-products.php:54 /startup-cpt-products.php:127
 msgid "Update Item"
 msgstr ""
 
-#: startup-cpt-products.php:55 /startup-cpt-products.php:120
+#: /startup-cpt-products.php:55 /startup-cpt-products.php:128
 msgid "View Item"
 msgstr ""
 
-#: startup-cpt-products.php:56
+#: /startup-cpt-products.php:56
 msgid "Search Item"
 msgstr ""
 
-#: startup-cpt-products.php:57
+#: /startup-cpt-products.php:57
 msgid "Not found"
 msgstr ""
 
-#: startup-cpt-products.php:58
+#: /startup-cpt-products.php:58
 msgid "Not found in Trash"
 msgstr ""
 
-#: startup-cpt-products.php:61
+#: /startup-cpt-products.php:61
 msgid "products"
 msgstr ""
 
-#: startup-cpt-products.php:62
+#: /startup-cpt-products.php:62
 msgid "Post Type Description"
 msgstr ""
 
-#: startup-cpt-products.php:110
+#: /startup-cpt-products.php:118
 msgctxt "Taxonomy General Name"
 msgid "Product Categories"
 msgstr ""
 
-#: startup-cpt-products.php:111
+#: /startup-cpt-products.php:119
 msgctxt "Taxonomy Singular Name"
 msgid "Product Category"
 msgstr ""
 
-#: startup-cpt-products.php:112
+#: /startup-cpt-products.php:120
 msgid "Product Categories"
 msgstr ""
 
-#: startup-cpt-products.php:114
+#: /startup-cpt-products.php:122
 msgid "Parent Item"
 msgstr ""
 
-#: startup-cpt-products.php:116
+#: /startup-cpt-products.php:124
 msgid "New Item Name"
 msgstr ""
 
-#: startup-cpt-products.php:121
+#: /startup-cpt-products.php:129
 msgid "Separate items with commas"
 msgstr ""
 
-#: startup-cpt-products.php:122
+#: /startup-cpt-products.php:130
 msgid "Add or remove items"
 msgstr ""
 
-#: startup-cpt-products.php:123
+#: /startup-cpt-products.php:131
 msgid "Choose from the most used"
 msgstr ""
 
-#: startup-cpt-products.php:124
+#: /startup-cpt-products.php:132
 msgid "Popular Items"
 msgstr ""
 
-#: startup-cpt-products.php:125
+#: /startup-cpt-products.php:133
 msgid "Search Items"
 msgstr ""
 
-#: startup-cpt-products.php:126
+#: /startup-cpt-products.php:134
 msgid "Not Found"
 msgstr ""
 
-#: startup-cpt-products.php:159
+#: /startup-cpt-products.php:167
 msgid "Product details"
 msgstr ""
 
-#: startup-cpt-products.php:164
+#: /startup-cpt-products.php:172
 msgid "Main picture"
 msgstr ""
 
-#: startup-cpt-products.php:165
+#: /startup-cpt-products.php:173
 msgid "Main image of the product, may be different from the thumbnail. i.e. 3D model"
 msgstr ""
 
-#: startup-cpt-products.php:175
-msgid "Thumbnail"
-msgstr ""
-
-#: startup-cpt-products.php:176
-msgid "The product picture on your website listings, if different from Main picture."
-msgstr ""
-
-#: startup-cpt-products.php:186
+#: /startup-cpt-products.php:183
 msgid "Short description"
 msgstr ""
 
-#: startup-cpt-products.php:187
+#: /startup-cpt-products.php:184
 msgid "i.e. \"New business building in Montreal\""
 msgstr ""
 
-#: startup-cpt-products.php:193
+#: /startup-cpt-products.php:190
 msgid "Categoy"
 msgstr ""
 
-#: startup-cpt-products.php:194
+#: /startup-cpt-products.php:191
 msgid "Select the category(ies) of the product"
 msgstr ""
 
-#: startup-cpt-products.php:202
+#: /startup-cpt-products.php:199
 msgid "Status"
 msgstr ""
 
-#: startup-cpt-products.php:203
+#: /startup-cpt-products.php:200
 msgid "The product's current status"
 msgstr ""
 
-#: startup-cpt-products.php:218
+#: /startup-cpt-products.php:205
+msgid "Available"
+msgstr ""
+
+#: /startup-cpt-products.php:206
+msgid "Sold out soon"
+msgstr ""
+
+#: /startup-cpt-products.php:207
+msgid "Sold out"
+msgstr ""
+
+#: /startup-cpt-products.php:208
+msgid "Back order"
+msgstr ""
+
+#: /startup-cpt-products.php:209
+msgid "Sale closed"
+msgstr ""
+
+#: /startup-cpt-products.php:210
+msgid "Unavailable"
+msgstr ""
+
+#: /startup-cpt-products.php:215
 msgid "Description"
 msgstr ""
 
-#: startup-cpt-products.php:219
+#: /startup-cpt-products.php:216
 msgid "Full, main description"
 msgstr ""
 
-#: startup-cpt-products.php:225
+#: /startup-cpt-products.php:234
 msgid "Price"
 msgstr ""
 
-#: startup-cpt-products.php:226
+#: /startup-cpt-products.php:235
 msgid "The product price in Canadian Dollar"
 msgstr ""
 
-#: startup-cpt-products.php:232
+#: /startup-cpt-products.php:241
 msgid "Special Price"
 msgstr ""
 
-#: startup-cpt-products.php:233
+#: /startup-cpt-products.php:242
 msgid "The product special price in Canadian Dollar"
 msgstr ""
 
-#: startup-cpt-products.php:239
+#: /startup-cpt-products.php:248
 msgid "Gallery"
 msgstr ""
 
-#: startup-cpt-products.php:240
+#: /startup-cpt-products.php:249
 msgid "Upload or add multiple images for product photo gallery."
 msgstr ""
 
-#: startup-cpt-products.php:247
+#: /startup-cpt-products.php:256
 msgid "External url"
 msgstr ""
 
-#: startup-cpt-products.php:248
+#: /startup-cpt-products.php:257
 msgid "Link to te product on an extrenal website (i.e. real estate agency)"
 msgstr ""
 
-#: lib/updater.php:434
+#: /lib/updater.php:434
 msgid ""
 "The plugin has been updated, but could not be reactivated. Please reactivate "
 "it manually."
 msgstr ""
 
-#: lib/updater.php:435
+#: /lib/updater.php:435
 msgid "Plugin reactivated successfully."
 msgstr ""
-
-#: startup-cpt-products.php:208
-msgid "Available"
-msgstr "Disponible"
-
-#: startup-cpt-products.php:209
-msgid "Sold out soon"
-msgstr "Bientôt épuisé"
-
-#: startup-cpt-products.php:210
-msgid "Sold out"
-msgstr "Épuisé"
-
-#: startup-cpt-products.php:211
-msgid "Back order"
-msgstr "Sur commande"
-
-#: startup-cpt-products.php:212
-msgid "Sale closed"
-msgstr "Vente terminée"
-
-#: startup-cpt-products.php:213
-msgid "Unavailable"
-msgstr "Indisponible"
