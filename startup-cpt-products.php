@@ -265,7 +265,7 @@ add_action( 'cmb2_admin_init', 'startup_reloaded_products_meta' );
 // Shortcode
 add_shortcode( 'products', function( $atts, $content= null ){
     ob_start();
-    require get_template_directory() . '/inc/shortcodes/products.php';
+    require get_template_directory() . '/template-parts/content-products.php';
     return ob_get_clean();
 });
 ?>
