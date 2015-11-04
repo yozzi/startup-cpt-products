@@ -1,18 +1,11 @@
 <?php
 /*
-Plugin Name: StartUp Products
+Plugin Name: StartUp CPT Products
 Description: Le plugin pour activer le Custom Post Products
 Author: Yann Caplain
 Version: 1.0.0
-Text Domain: startup-reloaded-products
+Text Domain: startup-cpt-products
 */
-
-//Charger traduction
-function startup_reloaded_products_translation() {
-  load_plugin_textdomain( 'startup-reloaded-products', false, dirname( plugin_basename( __FILE__ ) ) ); 
-}
-
-add_action( 'plugins_loaded', 'startup_reloaded_products_translation' );
 
 //GitHub Plugin Updater
 function startup_reloaded_products_updater() {
