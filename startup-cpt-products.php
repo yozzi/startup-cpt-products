@@ -34,25 +34,25 @@ add_action( 'init', 'startup_reloaded_products_updater' );
 //CPT
 function startup_reloaded_products() {
 	$labels = array(
-		'name'                => _x( 'Products', 'Post Type General Name', 'startup-reloaded-products' ),
-		'singular_name'       => _x( 'Product', 'Post Type Singular Name', 'startup-reloaded-products' ),
-		'menu_name'           => __( 'Products', 'startup-reloaded-products' ),
-		'name_admin_bar'      => __( 'Products', 'startup-reloaded-products' ),
-		'parent_item_colon'   => __( 'Parent Item:', 'startup-reloaded-products' ),
-		'all_items'           => __( 'All Items', 'startup-reloaded-products' ),
-		'add_new_item'        => __( 'Add New Item', 'startup-reloaded-products' ),
-		'add_new'             => __( 'Add New', 'startup-reloaded-products' ),
-		'new_item'            => __( 'New Item', 'startup-reloaded-products' ),
-		'edit_item'           => __( 'Edit Item', 'startup-reloaded-products' ),
-		'update_item'         => __( 'Update Item', 'startup-reloaded-products' ),
-		'view_item'           => __( 'View Item', 'startup-reloaded-products' ),
-		'search_items'        => __( 'Search Item', 'startup-reloaded-products' ),
-		'not_found'           => __( 'Not found', 'startup-reloaded-products' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'startup-reloaded-products' )
+		'name'                => _x( 'Products', 'Post Type General Name', 'startup-cpt-products' ),
+		'singular_name'       => _x( 'Product', 'Post Type Singular Name', 'startup-cpt-products' ),
+		'menu_name'           => __( 'Products', 'startup-cpt-products' ),
+		'name_admin_bar'      => __( 'Products', 'startup-cpt-products' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'startup-cpt-products' ),
+		'all_items'           => __( 'All Items', 'startup-cpt-products' ),
+		'add_new_item'        => __( 'Add New Item', 'startup-cpt-products' ),
+		'add_new'             => __( 'Add New', 'startup-cpt-products' ),
+		'new_item'            => __( 'New Item', 'startup-cpt-products' ),
+		'edit_item'           => __( 'Edit Item', 'startup-cpt-products' ),
+		'update_item'         => __( 'Update Item', 'startup-cpt-products' ),
+		'view_item'           => __( 'View Item', 'startup-cpt-products' ),
+		'search_items'        => __( 'Search Item', 'startup-cpt-products' ),
+		'not_found'           => __( 'Not found', 'startup-cpt-products' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'startup-cpt-products' )
 	);
 	$args = array(
-		'label'               => __( 'products', 'startup-reloaded-products' ),
-		'description'         => __( 'Post Type Description', 'startup-reloaded-products' ),
+		'label'               => __( 'products', 'startup-cpt-products' ),
+		'description'         => __( 'Post Type Description', 'startup-cpt-products' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'revisions', ),
 		//'taxonomies'          => array( 'product_types' ),
@@ -108,23 +108,23 @@ register_activation_hook( __FILE__, 'startup_reloaded_products_caps' );
 // Products taxonomy
 function startup_reloaded_product_categories() {
 	$labels = array(
-		'name'                       => _x( 'Product Categories', 'Taxonomy General Name', 'startup-reloaded-products' ),
-		'singular_name'              => _x( 'Product Category', 'Taxonomy Singular Name', 'startup-reloaded-products' ),
-		'menu_name'                  => __( 'Product Categories', 'startup-reloaded-products' ),
-		'all_items'                  => __( 'All Items', 'startup-reloaded-products' ),
-		'parent_item'                => __( 'Parent Item', 'startup-reloaded-products' ),
-		'parent_item_colon'          => __( 'Parent Item:', 'startup-reloaded-products' ),
-		'new_item_name'              => __( 'New Item Name', 'startup-reloaded-products' ),
-		'add_new_item'               => __( 'Add New Item', 'startup-reloaded-products' ),
-		'edit_item'                  => __( 'Edit Item', 'startup-reloaded-products' ),
-		'update_item'                => __( 'Update Item', 'startup-reloaded-products' ),
-		'view_item'                  => __( 'View Item', 'startup-reloaded-products' ),
-		'separate_items_with_commas' => __( 'Separate items with commas', 'startup-reloaded-products' ),
-		'add_or_remove_items'        => __( 'Add or remove items', 'startup-reloaded-products' ),
-		'choose_from_most_used'      => __( 'Choose from the most used', 'startup-reloaded-products' ),
-		'popular_items'              => __( 'Popular Items', 'startup-reloaded-products' ),
-		'search_items'               => __( 'Search Items', 'startup-reloaded-products' ),
-		'not_found'                  => __( 'Not Found', 'startup-reloaded-products' )
+		'name'                       => _x( 'Product Categories', 'Taxonomy General Name', 'startup-cpt-products' ),
+		'singular_name'              => _x( 'Product Category', 'Taxonomy Singular Name', 'startup-cpt-products' ),
+		'menu_name'                  => __( 'Product Categories', 'startup-cpt-products' ),
+		'all_items'                  => __( 'All Items', 'startup-cpt-products' ),
+		'parent_item'                => __( 'Parent Item', 'startup-cpt-products' ),
+		'parent_item_colon'          => __( 'Parent Item:', 'startup-cpt-products' ),
+		'new_item_name'              => __( 'New Item Name', 'startup-cpt-products' ),
+		'add_new_item'               => __( 'Add New Item', 'startup-cpt-products' ),
+		'edit_item'                  => __( 'Edit Item', 'startup-cpt-products' ),
+		'update_item'                => __( 'Update Item', 'startup-cpt-products' ),
+		'view_item'                  => __( 'View Item', 'startup-cpt-products' ),
+		'separate_items_with_commas' => __( 'Separate items with commas', 'startup-cpt-products' ),
+		'add_or_remove_items'        => __( 'Add or remove items', 'startup-cpt-products' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'startup-cpt-products' ),
+		'popular_items'              => __( 'Popular Items', 'startup-cpt-products' ),
+		'search_items'               => __( 'Search Items', 'startup-cpt-products' ),
+		'not_found'                  => __( 'Not Found', 'startup-cpt-products' )
 	);
 	$args = array(
 		'labels'                     => $labels,
@@ -157,13 +157,13 @@ function startup_reloaded_products_meta() {
 
 	$cmb_box = new_cmb2_box( array(
 		'id'            => $prefix . 'metabox',
-		'title'         => __( 'Product details', 'startup-reloaded-products' ),
+		'title'         => __( 'Product details', 'startup-cpt-products' ),
 		'object_types'  => array( 'products' )
 	) );
     
     $cmb_box->add_field( array(
-		'name' => __( 'Main picture', 'startup-reloaded-products' ),
-		'desc' => __( 'Main image of the product, may be different from the thumbnail. i.e. 3D model', 'startup-reloaded-products' ),
+		'name' => __( 'Main picture', 'startup-cpt-products' ),
+		'desc' => __( 'Main image of the product, may be different from the thumbnail. i.e. 3D model', 'startup-cpt-products' ),
 		'id'   => $prefix . 'main_pic',
 		'type' => 'file',
         // Optionally hide the text input for the url:
@@ -173,15 +173,15 @@ function startup_reloaded_products_meta() {
 	) );
 
 	$cmb_box->add_field( array(
-		'name'       => __( 'Short description', 'startup-reloaded-products' ),
-		'desc'       => __( 'i.e. "New business building in Montreal"', 'startup-reloaded-products' ),
+		'name'       => __( 'Short description', 'startup-cpt-products' ),
+		'desc'       => __( 'i.e. "New business building in Montreal"', 'startup-cpt-products' ),
 		'id'         => $prefix . 'short',
 		'type'       => 'text'
 	) );
     
     $cmb_box->add_field( array(
-		'name'     => __( 'Categoy', 'startup-reloaded-products' ),
-		'desc'     => __( 'Select the category(ies) of the product', 'startup-reloaded-products' ),
+		'name'     => __( 'Categoy', 'startup-cpt-products' ),
+		'desc'     => __( 'Select the category(ies) of the product', 'startup-cpt-products' ),
 		'id'       => $prefix . 'category',
 		'type'     => 'taxonomy_multicheck',
 		'taxonomy' => 'product-category', // Taxonomy Slug
@@ -189,24 +189,24 @@ function startup_reloaded_products_meta() {
 	) );
     
     $cmb_box->add_field( array(
-		'name'             => __( 'Status', 'startup-reloaded-products' ),
-		'desc'             => __( 'The product\'s current status', 'startup-reloaded-products' ),
+		'name'             => __( 'Status', 'startup-cpt-products' ),
+		'desc'             => __( 'The product\'s current status', 'startup-cpt-products' ),
 		'id'               => $prefix . 'status',
 		'type'             => 'select',
 		'show_option_none' => true,
 		'options'          => array(
-			'Available' => __( 'Available', 'startup-reloaded-products' ),
-			'Sold out soon'   => __( 'Sold out soon', 'startup-reloaded-products' ),
-			'Sold out'     => __( 'Sold out', 'startup-reloaded-products' ),
-            'Back order'     => __( 'Back order', 'startup-reloaded-products' ),
-            'Sale closed'     => __( 'Sale closed', 'startup-reloaded-products' ),
-            'Unavailable'     => __( 'Unavailable', 'startup-reloaded-products' )
+			'Available' => __( 'Available', 'startup-cpt-products' ),
+			'Sold out soon'   => __( 'Sold out soon', 'startup-cpt-products' ),
+			'Sold out'     => __( 'Sold out', 'startup-cpt-products' ),
+            'Back order'     => __( 'Back order', 'startup-cpt-products' ),
+            'Sale closed'     => __( 'Sale closed', 'startup-cpt-products' ),
+            'Unavailable'     => __( 'Unavailable', 'startup-cpt-products' )
 		),
 	) );
     
     $cmb_box->add_field( array(
-		'name' => __( 'Description', 'startup-reloaded-products' ),
-		'desc' => __( 'Full, main description', 'startup-reloaded-products' ),
+		'name' => __( 'Description', 'startup-cpt-products' ),
+		'desc' => __( 'Full, main description', 'startup-cpt-products' ),
 		'id'   => $prefix . 'description',
 		'type' => 'wysiwyg',
         'options' => array(
@@ -224,30 +224,30 @@ function startup_reloaded_products_meta() {
 	) );
 
 	$cmb_box->add_field( array(
-		'name' => __( 'Price', 'startup-reloaded-products' ),
-		'desc' => __( 'The product price in Canadian Dollar', 'startup-reloaded-products' ),
+		'name' => __( 'Price', 'startup-cpt-products' ),
+		'desc' => __( 'The product price in Canadian Dollar', 'startup-cpt-products' ),
 		'id'   => $prefix . 'price',
 		'type' => 'text_money'
 	) );
     
     $cmb_box->add_field( array(
-		'name' => __( 'Special Price', 'startup-reloaded-products' ),
-		'desc' => __( 'The product special price in Canadian Dollar', 'startup-reloaded-products' ),
+		'name' => __( 'Special Price', 'startup-cpt-products' ),
+		'desc' => __( 'The product special price in Canadian Dollar', 'startup-cpt-products' ),
 		'id'   => $prefix . 'special_price',
 		'type' => 'text_money'
 	) );
     
     $cmb_box->add_field( array(
-		'name'         => __( 'Gallery', 'startup-reloaded-products' ),
-		'desc'         => __( 'Upload or add multiple images for product photo gallery.', 'startup-reloaded-products' ),
+		'name'         => __( 'Gallery', 'startup-cpt-products' ),
+		'desc'         => __( 'Upload or add multiple images for product photo gallery.', 'startup-cpt-products' ),
 		'id'           => $prefix . 'gallery',
 		'type'         => 'file_list',
 		'preview_size' => array( 100, 100 ) // Default: array( 50, 50 )
 	) );
     
     $cmb_box->add_field( array(
-		'name' => __( 'External url', 'startup-reloaded-products' ),
-		'desc' => __( 'Link to te product on an extrenal website (i.e. real estate agency)', 'startup-reloaded-products' ),
+		'name' => __( 'External url', 'startup-cpt-products' ),
+		'desc' => __( 'Link to te product on an extrenal website (i.e. real estate agency)', 'startup-cpt-products' ),
 		'id'   => $prefix . 'url',
 		'type' => 'text_url'
 	) );
