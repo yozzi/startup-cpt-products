@@ -256,9 +256,17 @@ function startup_reloaded_products_meta() {
 add_action( 'cmb2_admin_init', 'startup_reloaded_products_meta' );
 
 // Shortcode
-add_shortcode( 'products', function( $atts, $content= null ){
-    ob_start();
-    require get_template_directory() . '/template-parts/content-products.php';
-    return ob_get_clean();
-});
+function startup_reloaded_products_shortcode( $atts ) {
+
+	// Attributes
+    $atts = shortcode_atts(array(
+            'bg' => ''
+        ), $atts);
+    
+	// Code
+        ob_start();
+        require get_template_directory() . '/template-parts/content-products.php';
+        return ob_get_clean();    
+}
+add_shortcode( 'products', 'startup_reloaded_products_shortcode' );
 ?>
