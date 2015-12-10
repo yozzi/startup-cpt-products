@@ -37,7 +37,7 @@ function startup_cpt_products_updater() {
 //add_action( 'init', 'startup_cpt_products_updater' );
 
 //CPT
-function startup_reloaded_products() {
+function startup_cpt_products() {
 	$labels = array(
 		'name'                => _x( 'Products', 'Post Type General Name', 'startup-cpt-products' ),
 		'singular_name'       => _x( 'Product', 'Post Type Singular Name', 'startup-cpt-products' ),
@@ -80,11 +80,11 @@ function startup_reloaded_products() {
 
 }
 
-add_action( 'init', 'startup_reloaded_products', 0 );
+add_action( 'init', 'startup_cpt_products', 0 );
 
 //Flusher les permalink à l'activation du plugin pour qu'ils fonctionnent sans mise à jour manuelle
 function startup_cpt_products_rewrite_flush() {
-    startup_reloaded_products();
+    startup_cpt_products();
     flush_rewrite_rules();
 }
 
