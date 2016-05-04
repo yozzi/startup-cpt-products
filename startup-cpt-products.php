@@ -16,6 +16,9 @@ if ( ! defined( 'WPINC' ) ) {
 //Include this to check if a plugin is activated with is_plugin_active
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
+//Include this to check dependencies
+include_once( 'inc/dependencies.php' );
+
 //GitHub Plugin Updater
 function startup_cpt_products_updater() {
 	include_once 'lib/updater.php';
@@ -160,25 +163,6 @@ function startup_reloaded_product_categories_metabox_remove() {
 add_action( 'admin_menu' , 'startup_reloaded_product_categories_metabox_remove' );
 
 // Metaboxes
-/**
- * Detection de CMB2. Identique dans tous les plugins.
- */
-if ( !function_exists( 'cmb2_detection' ) ) {
-    function cmb2_detection() {
-        if ( !defined( 'CMB2_LOADED' ) ) {
-            add_action( 'admin_notices', 'cmb2_notice' );
-        }
-    }
-
-    function cmb2_notice() {
-        if ( current_user_can( 'activate_plugins' ) ) {
-            echo '<div class="error message"><p>' . __( 'CMB2 plugin or StartUp Reloaded theme must be active to use custom metaboxes.', 'startup-cpt-products' ) . '</p></div>';
-        }
-    }
-
-    add_action( 'init', 'cmb2_detection' );
-}
-
 function startup_cpt_products_meta() {
 	// Start with an underscore to hide fields from custom fields list
 	$prefix = '_startup_cpt_products_';
@@ -303,25 +287,6 @@ function startup_cpt_products_shortcode( $atts ) {
 add_shortcode( 'products', 'startup_cpt_products_shortcode' );
 
 // Shortcode UI
-/**
- * Detection de Shortcake. Identique dans tous les plugins.
- */
-if ( !function_exists( 'shortcode_ui_detection' ) ) {
-    function shortcode_ui_detection() {
-        if ( !function_exists( 'shortcode_ui_register_for_shortcode' ) ) {
-            add_action( 'admin_notices', 'shortcode_ui_notice' );
-        }
-    }
-
-    function shortcode_ui_notice() {
-        if ( current_user_can( 'activate_plugins' ) ) {
-            echo '<div class="error message"><p>' . __( 'Shortcake plugin must be active to use fast shortcodes.', 'startup-cpt-products' ) . '</p></div>';
-        }
-    }
-
-    add_action( 'init', 'shortcode_ui_detection' );
-}
-
 function startup_cpt_products_shortcode_ui() {
 
     shortcode_ui_register_for_shortcode(
